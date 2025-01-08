@@ -1,4 +1,6 @@
-/* There's some sample CSS here which you can use or nuke as you like */
+/* conversation based on my idea and used Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alegreya+Sans:wght@900&family=Alkatra:wght@400..700&family=Amita:wght@400;700&family=Bokor&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Eagle+Lake&family=Ga+Maamli&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Kurale&family=Merienda:wght@300..900&family=Ponnala&family=Rajdhani:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 html {
   /* Make #id links scroll smoothly */
@@ -24,17 +26,18 @@ body {
   display: grid;
   place-content: center;
   /* Custom text and stuff */
-  background: #0033a0;
+  background: #000000;
   color: white;
   font-family: Futura;
   font-weight: bold;
   font-size: 70px;
   text-align: center;
+  
 }
 .hero a {
   color: white;
   text-decoration: underline;
-  text-decoration-color: #c6093b;
+  text-decoration-color: #fdfcfc;
 }
 
 /* A little "activation" to demonstrate JS is working in the template */
@@ -42,14 +45,23 @@ body {
   transition: background 0.5s;
 }
 .hero.active {
-  background: #c6093b;
+  background: #ffffff;
+  color: #000000;
+}
+
+.hero.active a{
+  color: #000000;
+   text-decoration: underline;
+  text-decoration-color: #000000;
+
 }
 
 main {
   /* Make sure our content can scroll the hero away */
   min-height: 100dvh;
-  max-width: 35em; /* choose a width for text */
-  line-height: 1.8; /* choose a line spacing */
-  font-size: 18px; /* choose a font size */
-  margin: 0 auto; /* center the content */
+  max-width: 25em; /* choose a width for text */
+  line-height: 2; /* choose a line spacing */
+  font-size: 20px; /* choose a font size */
+  margin: auto; /* center the content */
+  font-family: "Cinzel", serif;
 }

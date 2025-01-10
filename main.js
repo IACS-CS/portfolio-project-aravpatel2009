@@ -10,3 +10,11 @@ hero.addEventListener("click", () => {
   console.log("They clicked the hero!");
   hero.classList.toggle("active");
 });
+const flipButton = document.getElementById('flipButton');
+const body = document.body;
+
+// Add event listener to flip background on button click
+flipButton.addEventListener('click', () => {
+  // Toggle the 'flipped' class to start the animation
+  body.classList.toggle('flipped');
+});

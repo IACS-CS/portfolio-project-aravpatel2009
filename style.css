@@ -26,7 +26,7 @@ body {
   display: grid;
   place-content: center;
   /* Custom text and stuff */
-  background: #000000;
+  background: linear-gradient(to left, #000000, #ffffff);
   color: white;
   font-family: Futura;
   font-weight: bold;
@@ -38,6 +38,7 @@ body {
   color: white;
   text-decoration: underline;
   text-decoration-color: #fdfcfc;
+ 
 }
 
 /* A little "activation" to demonstrate JS is working in the template */
@@ -45,17 +46,16 @@ body {
   transition: background 0.5s;
 }
 .hero.active {
-  background: #ffffff;
+  background: linear-gradient(to right, #000000, #ffffff);
   color: #000000;
+  
 }
 
 .hero.active a{
   color: #000000;
    text-decoration: underline;
-  text-decoration-color: #000000;
-
+  text-decoration-color: #000000; 
 }
-
 main {
   /* Make sure our content can scroll the hero away */
   min-height: 100dvh;
@@ -65,3 +65,22 @@ main {
   margin: auto; /* center the content */
   font-family: "Cinzel", serif;
 }
+body {
+  background: linear-gradient(to right, #030303a3, #ffffff3e);
+  transition: all 0.5s ease-in-out;
+}
+
+
+.hero:hover {
+  animation: flipBackground 2s infinite alternate;
+}
+
+@keyframes flipBackground {
+  50% {
+    background: linear-gradient(to right, #ffffff, #000000); /* initial state */
+  }
+  100% {
+    background: linear-gradient(to right, #000000, #ffffff); /* flipped state */
+  }
+}
+

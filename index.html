@@ -4,11 +4,14 @@
     <title>Arav Patel's Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./name-pop.css" />
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   </head>
   <body>
     <section class="hero">
       <div id="name-container"></div>
-      <h1>Arav Patel's Portfolio</h1>
+     <div data-aos="flip-left"><h1>Arav Patel's Portfolio</h1> </div>
       <a href="#about-me" class="cta">Learn More</a>
       <a href="#about-me" aria-label="Learn more about Arav Patel">All About Me</a>
       
@@ -17,6 +20,7 @@
     <main>
       <section class="info" id="about-me">
         <div class="about-me">
+          <div data-aos="fade-left">
           <h2>About Me</h2>
           <p>
             Hello! My name is Arav Patel. I am 15 years old, and I am a 9th grader at IACS. Here are a few things about me:
@@ -25,25 +29,60 @@
               <li>I will be graduating in 2028.</li>
               <li>I love to travel around the world, meet new people, and try new food.</li>
             </ul>
-          </p>
+          </p></div>
         </div>
       </section>
 
+
       <section class="sample-work" id="cyoa">
+<div data-aos="fade-right">
+  <h2>Portfolio Project</h2>
+    <p> The Portfolio Project showcases my skills and growth in web design, highlighting key projects and concepts 
+      I’ve learned. It includes an engaging "About Me" section where visitors can learn more about my background and 
+      interests. The portfolio features projects such as the Choose-Your-Own Adventure, Zen Garden, and Imitation Project, 
+      each with descriptions and insights into my creative process. To demonstrate my technical understanding, the site incorporates
+       sample code in HTML, CSS, and JavaScript. For interactivity, I’ve added dynamic features like tabs, a content slideshow, and 
+       playful effects that respond to user interactions, making the experience both functional and enjoyable. This project reflects 
+       my >y and passion for creating interactive and user-friendly web experiences.
+</p> </div>
+<div data-aos="flip-down">
         <h2>Zen Garden Project</h2>
-        <p>In this project, we had to use only CSS to create a design. We couldn't modify the HTML. I experimented with typography, backgrounds, colors, and the layout of the menu to create a visually appealing design.</p>
+        <p>The Zen Garden Project is centered around transforming a single HTML file into a visually captivating design using only CSS.
+           This project highlights the power of stylesheets by applying unique layouts, color schemes, typography, and imagery without altering
+            the HTML structure. The goal is to create a harmonious and beautiful design that exemplifies creativity and technical skill. Through 
+            this project, I demonstrate my understanding of design principles, responsive styling, and the ability to craft elegant, engaging web 
+            experiences solely through CSS customization.</p> </div>
+          <div data-aos="zoom-in-down"> 
         <h2>Choose-Your-Own Adventure Project</h2>
          <p>The <strong>Choose-Your-Own Adventure</strong> project is an interactive web-based experience that allows users to
         make decisions that shape the outcome of a story. The project was built using <em>HTML</em>, <i>CSS</i>, and 
         to provide a seamless, dynamic experience. Users can select different paths and interact with various scenarios that
         affect the narrative, making every journey unique. The use of <b>conditional statements</b> and <strong>user input</strong> helps create
-        a personalized story where the user is in control of the plot. </p>
+        a personalized story where the user is in control of the plot. </p></div> 
+        <div data-aos="fade-down-right">
         <h2>Imitation Project</h2>
-        <p>Project Imitation focuses on translating a traditional print design into a web-based format using HTML and CSS. The project emphasizes careful attention to detail, including the positioning of elements, choice of font families and weights, and the use of color schemes that mirror print materials. Key features of the layout include the strategic placement of images, which are aligned and styled to fit the design, and a fixed footer that mimics the static nature of print layouts. By leveraging techniques like flexbox for element alignment and ensuring the design remains coherent, Project Imitation serves as a practice in translating print aesthetics into the digital realm while maintaining readability and a visually engaging experience.
-
-</p>
+        <p>Project Imitation focuses on translating a traditional print design into a web-based format using HTML and CSS. 
+          he project emphasizes careful attention to detail, including the positioning of elements, choice of font families and weights,
+           and the use of color schemes that mirror print materials. Key features of the layout include the strategic placement of images, 
+           which are aligned and styled to fit the design, and a fixed footer that mimics the static nature of print layouts. By leveraging 
+           techniques like flexbox for element alignment and ensuring the design remains coherent, Project Imitation serves as a practice in 
+           translating print aesthetics into the digital realm while maintaining readability and a visually engaging experience.
+    </p><div data-aos="fade-down-right"></div>
+    </section>
+  
             </section>
     </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,  // Animation duration in milliseconds
+      once: false,     // Whether animation should only happen once
+    });
+  </script>
+
+
+       
 
     
     <script src="main.js"></script>

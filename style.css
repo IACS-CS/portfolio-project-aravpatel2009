@@ -11,7 +11,6 @@ body {
   /* Change to something you like, but please do customize the font! */
   font-family: Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.4;
-  /* reset default margins */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -82,5 +81,17 @@ body {
   100% {
     background: linear-gradient(to right, #000000, #ffffff); /* flipped state */
   }
+}
+.smiley {
+  position: absolute;
+  font-size: 20px;
+  pointer-events: none;
+  user-select: none;
+  animation: fadeOut 1s ease-out;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
